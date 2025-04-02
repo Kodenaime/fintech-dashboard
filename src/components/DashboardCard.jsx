@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { useAppContext } from '../context/AppContext';
 import { fetchPortfolioData, fetchTransactions } from '../api/fintechApi';
 
-const Dashboard = () => {
+const DashboardCard = () => {
   const { 
     portfolio, 
     setPortfolio, 
@@ -74,4 +74,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DashboardCard;

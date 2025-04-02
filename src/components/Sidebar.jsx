@@ -1,20 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FiPieChart, FiTrendingUp, FiDollarSign, FiCreditCard, FiGlobe, FiSettings } from 'react-icons/fi';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  
   const navItems = [
-    { path: '/dashboard', icon: '📊', label: 'Dashboard' },
-    { path: '/investments', icon: '📈', label: 'Investments' },
-    { path: '/savings', icon: '💰', label: 'Savings' },
-    { path: '/transactions', icon: '💸', label: 'Transactions' },
-    { path: '/market', icon: '🌐', label: 'Market Trends' },
-    { path: '/settings', icon: '⚙️', label: 'Settings' },
+    { path: '/', icon: <FiPieChart />, label: 'Dashboard' },
+    { path: '/investments', icon: <FiTrendingUp />, label: 'Investments' },
+    { path: '/savings', icon: <FiDollarSign />, label: 'Savings' },
+    { path: '/transactions', icon: <FiCreditCard />, label: 'Transactions' },
+    { path: '/market', icon: <FiGlobe />, label: 'Market Trends' },
+    { path: '/settings', icon: <FiSettings />, label: 'Settings' },
   ];
 
   return (
     <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-header">
-        <h2>FinTrack</h2>
+        <h2>KODEVEST</h2>
         <button className="close-btn" onClick={toggleSidebar}>×</button>
       </div>
       <nav className="sidebar-nav">
@@ -22,8 +24,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           {navItems.map((item) => (
             <li key={item.path}>
               <NavLink 
-                to={item.path} 
-                className={({ isActive }) => isActive ? 'active' : ''}
+                to={item.path}
+                className={({ isActive }) => 
+                  isActive ? 'active' : ''
+                }
                 onClick={toggleSidebar}
               >
                 <span className="nav-icon">{item.icon}</span>
@@ -41,8 +45,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             className="user-avatar" 
           />
           <div className="user-info">
-            <p className="user-name">John Doe</p>
-            <p className="user-email">john.doe@example.com</p>
+            <p className="user-name">Naruto Uzumaki</p>
+            <p className="user-email">uzumaki.n@gmail.com</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import Investment from './components/Investment';
-import Transactions from './components/Transactions';
-import Savings from './components/Savings';
-import Trends from './components/Trends';
+import Dashboard from './pages/Dashboard'; 
+import InvestmentPage from './pages/InvestmentPage'; 
+import SavingsPage from './pages/SavingsPage';
+import TransactionsPage from './pages/TransactionsPage';
+import MarketTrends from './pages/MarketTrends';
+import Settings from './pages/Settings';
 
 
 const App = () => {
@@ -40,13 +42,14 @@ const App = () => {
         <div className="main-content">
           <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
           <div className="content">
-            <Dashboard />
-            <div className="dashboard-grid">
-              <Investment />
-              <Transactions />
-              <Savings />
-              <Trends />
-            </div>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/investments" element={<InvestmentPage />} />
+              <Route path="/savings" element={<SavingsPage />} />
+              <Route path="/transactions" element={<TransactionsPage />} />
+              <Route path="/market" element={<MarketTrends />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
           </div>
         </div>
       </div>
