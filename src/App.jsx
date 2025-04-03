@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Dashboard from './pages/Dashboard'
-import InvestmentPage from './pages/InvestmentPage'; 
-import SavingsPage from './pages/SavingsPage';
-import TransactionsPage from './pages/TransactionsPage';
-import MarketTrends from './pages/MarketTrends';
-import Settings from './pages/Settings';
+import Header from './components/Header.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import Dashboard from './pages/Dashboard.jsx'
+import InvestmentPage from './pages/InvestmentPage.jsx'; 
+import SavingsPage from './pages/SavingsPage.jsx';
+import TransactionsPage from './pages/TransactionsPage.jsx';
+import MarketTrends from './pages/MarketTrends.jsx';
+import Settings from './pages/Settings.jsx';
 
 
 const App = () => {
