@@ -1,13 +1,15 @@
 import React from 'react';
 
+import { FaBarsProgress } from "react-icons/fa6";
+
 const Header = ({ toggleSidebar, toggleDarkMode, darkMode }) => {
   return (
     <header className="header">
       <div className="header-left">
         <button className="menu-btn" onClick={toggleSidebar}>
-          <span className="menu-icon">☰</span>
+          <span className="menu-icon"><FaBarsProgress /></span>
         </button>
-        <h1 className="logo">FinTrack</h1>
+        <h1 className="logo">KODEVEST</h1>
       </div>
       <div className="header-right">
         <button className="dark-mode-toggle" onClick={toggleDarkMode}>

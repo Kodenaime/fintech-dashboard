@@ -5,7 +5,7 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const [user, setUser] = useState({
     name: 'Naruto Uzumaki',
-    email: 'Naruto.uzumaki@gmail+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.com',
+    email: 'uzumaki.n@gmail.com',
     avatar: 'https://randomuser.me/api/portraits/men/1.jpg'
   });
   

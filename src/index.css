@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
 :root {
-  --primary-color: #4a6bff;
+  --primary-color: #ff4500;
+  --blue-color: #4a6bff;
   --secondary-color: #f5f7ff;
   --text-color: #333;
   --text-light: #666;
@@ -8,6 +12,11 @@
   --border-color: #e0e0e0;
   --positive: #10b981;
   --negative: #ef4444;
+
+
+ 
+
+
   --sidebar-width: 250px;
 }
 
@@ -25,7 +34,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 body {
@@ -38,6 +47,34 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.main-btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  background: var(--primary-color);
+  color: var(--card-bg);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 400ms all ease-in-out;
+}
+
+.btn-blue {
+  background: var(--blue-color);
+  margin-right: 1rem;
+}
+
+.btn-red {
+  background: var(--negative);
+  margin-right: 1rem;
+}
+
+.main-btn:hover {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .main-content {

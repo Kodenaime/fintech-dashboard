@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Dashboard from './pages/Dashboard'; 
+import Dashboard from './pages/Dashboard'
 import InvestmentPage from './pages/InvestmentPage'; 
 import SavingsPage from './pages/SavingsPage';
 import TransactionsPage from './pages/TransactionsPage';

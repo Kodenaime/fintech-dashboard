@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiPieChart, FiTrendingUp, FiDollarSign, FiCreditCard, FiGlobe, FiSettings } from 'react-icons/fi';
+import { MdOutlineClose } from "react-icons/md";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   
@@ -17,7 +18,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-header">
         <h2>KODEVEST</h2>
-        <button className="close-btn" onClick={toggleSidebar}>×</button>
+        <button className="close-btn" onClick={toggleSidebar}><MdOutlineClose /></button>
       </div>
       <nav className="sidebar-nav">
         <ul>

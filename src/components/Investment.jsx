@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from 'react';
 import { useAppContext } from '../context/AppContext';
 import { fetchPortfolioData } from '../api/fintechApi';
 
+import { FiPieChart, FiTrendingDown, FiDollarSign, FiHome, FiBriefcase } from 'react-icons/fi';
+
 const Investment = () => {
   const { portfolio, setPortfolio, isLoading, setIsLoading } = useAppContext();
 
@@ -21,15 +23,25 @@ const Investment = () => {
     loadData();
   }, [setPortfolio, setIsLoading]);
 
-  const getTypeIcon = (type) => {
-    switch(type) {
-      case 'stocks': return '📊';
-      case 'bonds': return '📉';
-      case 'crypto': return '🪙';
-      case 'real-estate': return '🏠';
-      default: return '💼';
-    }
-  };
+  // const getTypeIcon = (type) => {
+  //   switch(type) {
+  //     case 'stocks': return '📊';
+  //     case 'bonds': return '📉';
+  //     case 'crypto': return '🪙';
+  //     case 'real-estate': return '🏠';
+  //     default: return '💼';
+  //   }
+  // };
+
+const getTypeIcon = (type) => {
+  switch(type) {
+    case 'stocks': return <FiPieChart className="type-icon" />;
+    case 'bonds': return <FiTrendingDown className="type-icon" />;
+    case 'crypto': return <FiDollarSign className="type-icon" />;
+    case 'real-estate': return <FiHome className="type-icon" />;
+    default: return <FiBriefcase className="type-icon" />;
+  }
+};
 
   return (
     <div className="portfolio-section card">
