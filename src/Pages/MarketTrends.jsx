@@ -1,5 +1,5 @@
 import React from 'react';
-import Trends from '../components/Trends';
+import Trends from '../components/Trends.jsx';
 
 const MarketTrendsPage = () => {
   return (

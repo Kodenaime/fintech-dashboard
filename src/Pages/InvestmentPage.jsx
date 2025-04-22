@@ -1,5 +1,5 @@
 import React from 'react';
-import Investment from '../components/Investment';
+import Investment from '../components/Investment.jsx';
 
 const InvestmentsPage = () => {
   return (
@@ -7,8 +7,8 @@ const InvestmentsPage = () => {
       <h1 className="page-title">My Investments</h1>
       <Investment />
       <div className="investment-actions">
-        <button className="btn-primary">Add New Investment</button>
-        <button className="btn-outline">View Performance History</button>
+        <button className="main-btn">New Investment</button>
+        <button className="main-btn">Performance History</button>
       </div>
     </div>
   );

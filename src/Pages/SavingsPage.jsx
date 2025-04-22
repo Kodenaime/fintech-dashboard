@@ -1,5 +1,5 @@
 import React from 'react';
-import Savings from '../components/Savings';
+import Savings from '../components/Savings.jsx';
 
 const SavingsPage = () => {
   return (

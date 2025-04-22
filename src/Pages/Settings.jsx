@@ -15,7 +15,7 @@ const Settings = () => {
           <div className="profile-details">
             <p><strong>Name:</strong> {user.name}</p>
             <p><strong>Email:</strong> {user.email}</p>
-            <button className="btn-outline">Edit Profile</button>
+            <button className="main-btn btn-blue">Edit Profile</button>
           </div>
         </div>
       </div>
@@ -44,8 +44,8 @@ const Settings = () => {
 
       <div className="settings-section">
         <h2>Account</h2>
-        <button className="btn-outline">Change Password</button>
-        <button className="btn-danger">Delete Account</button>
+        <button className="main-btn btn-blue">Change Password</button>
+        <button className="main-btn btn-red">Delete Account</button>
       </div>
     </div>
   );

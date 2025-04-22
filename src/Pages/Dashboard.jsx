@@ -1,9 +1,9 @@
 import React from 'react';
-import DashboardCards from '../components/DashboardCard';
-import Investment from '../components/Investment';
-import Transactions from '../components/Transactions';
-import Savings from '../components/Savings';
-import Trends from '../components/Trends';
+import DashboardCards from '../components/DashboardCard.jsx';
+import Investment from '../components/Investment.jsx';
+import Transactions from '../components/Transactions.jsx';
+import Savings from '../components/Savings.jsx';
+import Trends from '../components/Trends.jsx';
 
 
 const Dashboard = () => {
